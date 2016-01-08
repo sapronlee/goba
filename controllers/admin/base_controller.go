@@ -10,6 +10,7 @@ type BaseController struct {
 
 func (c *BaseController) Prepare() {
 	c.BaseController.Prepare()
+	c.Layout = "layout/admin.tpl"
 	c.RunInheritPrepare()
 }
 

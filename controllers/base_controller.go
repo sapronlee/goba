@@ -10,6 +10,7 @@ type BaseController struct {
 
 func (c *BaseController) Prepare() {
 	c.Data["AppName"] = beego.AppName
+	c.Layout = "layout/base.tpl"
 	c.RunInheritPrepare()
 }
 
